@@ -6,9 +6,9 @@ pipeline {
         bat 'python3 --version'
       }
     }
-    stage('hello') {
+    stage('pip') {
       steps {
-        bat 'python3 hello.py'
+        bat 'pip list'
       }
     }
   }
