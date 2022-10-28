@@ -8,7 +8,7 @@ pipeline {
     }
     stage('pip') {
       steps {
-        bat 'pip list'
+        bat 'pytest -v .'
       }
     }
   }
