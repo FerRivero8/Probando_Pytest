@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Pytest') {
       steps {
-        bat 'pytest --version'
+        bat 'pytest -v prueba_test.py'
       }
     }
   }
