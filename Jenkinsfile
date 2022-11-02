@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Pytest Version') {
       steps {
-        bat 'C:\\Users\\friverob\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\pytest.exe --version'
+        bat 'pytest --version'
       }
     }
   }
