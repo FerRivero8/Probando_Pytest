@@ -8,6 +8,11 @@ pipeline {
     }
     stage('pip') {
       steps {
+        bat 'pip list'
+      }
+    }
+    stage('Pytest Version') {
+      steps {
         bat 'pytest --version'
       }
     }
