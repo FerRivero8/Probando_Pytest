@@ -6,12 +6,7 @@ pipeline {
         bat 'python --version'
       }
     }
-    stage('pip') {
-      steps {
-        bat 'pip list'
-      }
-    }
-    stage('Pytest Version') {
+    stage('Pytest') {
       steps {
         bat 'pytest --version'
       }
